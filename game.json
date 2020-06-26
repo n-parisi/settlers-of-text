@@ -1,0 +1,30 @@
+{
+  "tiles" : {
+    "A" : { "type" : "", "value": 11, "robber" : false }
+    "B" : { "type" : "", "value": 12, "robber" : false }
+    "C" : { "type" : "", "value": 9, "robber" : false }
+    "D" : { "type" : "", "value": 10, "robber" : false }
+    "E" : { "type" : "", "value": 8, "robber" : false }
+    "F" : { "type" : "", "value": 3, "robber" : false }
+    "G" : { "type" : "", "value": 6, "robber" : false }
+    "H" : { "type" : "", "value": 2, "robber" : false }
+    "I" : { "type" : "", "value": 5, "robber" : false }
+    "J" : { "type" : "", "value": 0, "robber" : false }
+    "K" : { "type" : "", "value": 8, "robber" : false }
+    "L" : { "type" : "", "value": 4, "robber" : false }
+    "M" : { "type" : "", "value": 6, "robber" : false }
+    "N" : { "type" : "", "value": 5, "robber" : false }
+    "O" : { "type" : "", "value": 4, "robber" : false }
+    "P" : { "type" : "", "value": 9, "robber" : false }
+    "Q" : { "type" : "", "value": 10, "robber" : false }
+    "R" : { "type" : "", "value": 3, "robber" : true }
+    "S" : { "type" : "", "value": 11, "robber" : false }
+  },
+  "edges" : [
+    { "display" : "+", "edge" : [C] }
+    { "display" : "+", "edge" : [C] }
+    { "display" : "+", "edge" : [B] }
+    { "display" : "+", "edge" : [B C] }
+    { "display" : "+", "edge" : [C D] }
+    { "display" : "+", "edge" : [D] }
+}
