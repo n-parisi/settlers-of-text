@@ -28,7 +28,7 @@ Game client for running a text based Settlers of Catan game
 +            + ---- +            + ---- +            +
  \          /    J   \          /    H   \          /
   \    L   /          \    W   /     2    \    L   /
-   + ---- +      X     + ---- +            + ---- +
+   + ---- +            + ---- +            + ---- +
            \          /    I   \          /
             \        /     5    \    B   /
              + ---- +            + ---- +
