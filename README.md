@@ -8,36 +8,36 @@ Game client for running a text based Settlers of Catan game
                       /   09   \
                      /          \
             02 ---- 03  GGGGGG  04 ---- 05
-            /    12  \  GGGGGG  /   10   \
+            /   12   \  GGGGGG  /   10   \
            /          \ GGGGGG /          \
-  06 ---- 07   OOOOO   08 ---- 09  BBBBB  10 ---- 11
-  /    A   \   OOOOO  /    N   \   BBBBB  /    E   \
- /     11   \  OOOOO /     5    \  BBBBB /     8    \
-12          13 ---- 14          15 ---- 16           17
- \          /    M   \          /    O   \          /
-  \    L   /     6    \    L   /     4    \    W   /
-  18 ---- 19          20 ---- 21          22 ---- 23
-  /    L   \          /    S   \          /    F   \
- /     4    \    G   /     11   \    O   /     3    \
-24          25 ---- 26          27 ---- 28           29
- \          /    R   \          /    P   \          /
-  \    B   /     3(R) \    O   /     9    \    G   /
-  30 ---- 31          32 ---- 33          34 ---- 35
-  /    K   \          /    Q   \          /    G   \
- /     8    \    W   /     10   \    G   /     6    \
-36          37 ---- 38          39 ---- 40           41
- \          /    J   \          /    H   \          /
-  \    L   /          \    W   /     2    \    L   /
-  42 ---- 43          44 ---- 45          46 ---- 47
-           \          /    I   \          /
-            \        /     5    \    B   /
-            48 ---- 49          50 ---- 51
-                     \          /
-                      \    W   /
+  06 ---- 07  OOOOOO   08 ---- 09 BBBBBB  10 ---- 11
+  /    11  \  OOOOOO  /   05   \  BBBBBB  /   08   \
+ /          \ OOOOOO /          \ BBBBBB /          \
+12  LLLLLL  13 ---- 14  LLLLLL  15 ---- 16  WWWWWW  17
+ \  LLLLLL  /   06   \  LLLLLL  /   04   \  WWWWWW  /
+  \ LLLLLL /          \ LLLLLL /          \ WWWWWW /
+  18 ---- 19  GGGGGG  20 ---- 21  OOOOOO  22 ---- 23
+  /   04   \  GGGGGG  /   11   \  OOOOOO  /   03   \
+ /          \ GGGGGG /          \ OOOOOO /          \
+24  BBBBBB  25 ---- 26  OOOOOO  27 ---- 28  GGGGGG  29
+ \  BBBBBB  /   03   \  OOOOOO  /   09   \  GGGGGG  /
+  \ BBBBBB /   RRRR   \ OOOOOO /          \ GGGGGG /
+  30 ---- 31  WWWWWW  32 ---- 33  GGGGGG  34 ---- 35
+  /   08   \  WWWWWW  /   10   \  GGGGGG  /   06   \
+ /          \ WWWWWW /          \ GGGGGG /          \
+36  LLLLLL  37 ---- 38  WWWWWW  39 ---- 40  LLLLLL  41
+ \  LLLLLL  /        \  WWWWWW  /   02   \  LLLLLL  /
+  \ LLLLLL /          \ WWWWWW /          \ LLLLLL /
+  42 ---- 43          44 ---- 45  BBBBBB  46 ---- 47
+           \          /   05   \  BBBBBB  /
+            \        /          \ BBBBBB /
+            48 ---- 49  WWWWWW  50 ---- 51
+                     \  WWWWWW  /
+                      \ WWWWWW /
                       52 ---- 53
 ```
 
-The letters at the top are identifiers for each space. They are always the same for each game. The number below them is the value for the space - what dice roll activates that space.  `(R)` next to the number means the robber is currently on that space.
+Edges are identified by a number. These numbers would not typically be shown to make the board more easily understandable, and would only need to be displayed when a player needs to designate where to build a structure.
 
 The letter on the bottom is the resource for that space. The letter could be color coded for easier visibility. Roads would also be colored.
 
@@ -46,5 +46,3 @@ L = Lumber
 O = Ore  
 G = Grain  
 W = Wool  
-
-Normally the letter identifier would only be visible when a player needs to use them to place a structure. Also allow player to filter a version of the board with only certain resources, or certain player structure/roads. 
