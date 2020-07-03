@@ -1,25 +1,4 @@
 {
-  "tiles" : [
-    { "id" : 0,     "type" : "",    "value": 11,    "robber" : false },
-    { "id" : 1,     "type" : "",    "value": 12,    "robber" : false },
-    { "id" : 2,     "type" : "",    "value": 9,     "robber" : false },
-    { "id" : 3,     "type" : "",    "value": 10,    "robber" : false },
-    { "id" : 4,     "type" : "",    "value": 8,     "robber" : false },
-    { "id" : 5,     "type" : "",    "value": 3,     "robber" : false },
-    { "id" : 6,     "type" : "",    "value": 6,     "robber" : false },
-    { "id" : 7,     "type" : "",    "value": 2,     "robber" : false },
-    { "id" : 8,     "type" : "",    "value": 5,     "robber" : false },
-    { "id" : 9,     "type" : "",    "value": 0,     "robber" : false },
-    { "id" : 10,    "type" : "",    "value": 8,     "robber" : false },
-    { "id" : 11,    "type" : "",    "value": 4,     "robber" : false },
-    { "id" : 12,    "type" : "",    "value": 6,     "robber" : false },
-    { "id" : 13,    "type" : "",    "value": 5,     "robber" : false },
-    { "id" : 14,    "type" : "",    "value": 4,     "robber" : false },
-    { "id" : 15,    "type" : "",    "value": 9,     "robber" : false },
-    { "id" : 16,    "type" : "",    "value": 10,    "robber" : false },
-    { "id" : 17,    "type" : "",    "value": 3,     "robber" : true },
-    { "id" : 18,    "type" : "",    "value": 11,    "robber" : false }
-  ],
   "edges" : [
     { "display" : "+",    "tiles" : [2],     "connectedTo" : [1, 3] },
     { "display" : "+",    "tiles" : [2],     "connectedTo" : [0, 4] },
