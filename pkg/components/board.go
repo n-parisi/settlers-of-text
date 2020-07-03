@@ -1,15 +1,16 @@
-package game
+package components
 
 import (
-	"fmt"
 	"math/rand"
 	"time"
 )
 
 type Game struct {
-	Tiles []Tile
+	Tiles      []Tile
 	Structures []Structure
 }
+
+//Add player struct
 
 type Tile struct {
 	Id     int
@@ -19,17 +20,9 @@ type Tile struct {
 }
 
 type Structure struct {
-	Type int
-	Edge int
+	Type  int
+	Edge  int
 	Owner int
-}
-
-func (s Structure) GetDisplay() string {
-	if s.Type == CITY {
-		return fmt.Sprint("C", s.Owner)
-	} else {
-		return fmt.Sprint("S", s.Owner)
-	}
 }
 
 //Surely this is stupid and we can find enum-like pattern / separate files for less confusion
@@ -42,12 +35,8 @@ const (
 	DESERT int = 6
 
 	SETTLEMENT int = 7
-	CITY int = 8
+	CITY       int = 8
 )
-
-var TileValues = []int{5, 2, 6, 3, 8, 10, 9, 12, 11, 4, 8, 10, 9, 4, 5, 6, 3, 11}
-var TileTypes = []int{BRICK, BRICK, BRICK, LUMBER, LUMBER, LUMBER, LUMBER, ORE, ORE, ORE,
-	GRAIN, GRAIN, GRAIN, GRAIN, WOOL, WOOL, WOOL, WOOL, DESERT}
 
 func (g *Game) AddStructure(sType int, sEdge int, sOwner int) {
 	st := Structure{sType, sEdge, sOwner}
@@ -84,6 +73,10 @@ func NewGame() *Game {
 		tiles = append(tiles, tile)
 	}
 
-	game := Game{tiles, make([]Structure,0)}
+	game := Game{tiles, make([]Structure, 0)}
 	return &game
 }
+
+var TileValues = []int{5, 2, 6, 3, 8, 10, 9, 12, 11, 4, 8, 10, 9, 4, 5, 6, 3, 11}
+var TileTypes = []int{BRICK, BRICK, BRICK, LUMBER, LUMBER, LUMBER, LUMBER, ORE, ORE, ORE,
+	GRAIN, GRAIN, GRAIN, GRAIN, WOOL, WOOL, WOOL, WOOL, DESERT}
